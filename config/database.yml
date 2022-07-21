@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: solidus_fundamentals_Metuz_development
+
+test:
+  <<: *default
+  database: solidus_fundamentals_Metuz_test
+
+production:
+  <<: *default
+  database: solidus_fundamentals_Metuz_production
+  username: solidus_fundamentals_Metuz
+  password: <%= ENV['SOLIDUS_FUNDAMENTALS_METUZ_DATABASE_PASSWORD'] %>
