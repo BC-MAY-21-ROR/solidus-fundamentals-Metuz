@@ -32,6 +32,9 @@ gem 'solidus_auth_devise'
 # psych
 gem 'psych', '< 4'
 
+# rubycritic
+gem "rubycritic", require: false
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 

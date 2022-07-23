@@ -12,7 +12,7 @@ module SolidusFundamentalsMetuz
     initializer 'spree.decorators' do |app|
       config.to_prepare do
         Dir.glob(Rails.root.join('app/**/*_decorator*.rb')) do |path|
-          require_dependency(path)
+          Rails.configuration.cache_classes ? require(path) : load(path)
         end
       end
     end
