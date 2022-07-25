@@ -20,9 +20,9 @@ Spree.config do |config|
   # any inventory changes.
   # config.inventory_cache_threshold = 3
 
-  # Configure adapter for attachments on products and taxons (use PaperclipAttachment or PaperclipAttachment)
-  config.image_attachment_module = 'Spree::Image::PaperclipAttachment'
-  config.taxon_attachment_module = 'Spree::Taxon::PaperclipAttachment'
+  # Configure adapter for attachments on products and taxons (use ActiveStorageAttachment or PaperclipAttachment)
+  config.image_attachment_module = 'Spree::Image::ActiveStorageAttachment'
+  config.taxon_attachment_module = 'Spree::Taxon::ActiveStorageAttachment'
 
   # Defaults
   # Permission Sets:
