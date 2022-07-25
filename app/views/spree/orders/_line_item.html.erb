@@ -4,7 +4,7 @@
     <td class="cart-item-image" data-hook="cart_item_image">
       <%= link_to(render('spree/shared/image',
                          image: (variant.gallery.images.first || variant.product.gallery.images.first),
-                         size: :small), variant.product) %>
+                         size: :mini), variant.product) %>
     </td>
     <td class="cart-item-description" data-hook="cart_item_description">
       <h4><%= link_to line_item.name, product_path(variant.product) %></h4>
@@ -22,7 +22,7 @@
       <%= line_item.single_money.to_html %>
     </td>
     <td class="cart-item-quantity" data-hook="cart_item_quantity">
-      <%= item_form.number_field :quantity, min: 0, class: "line_item_quantity", size: 5 %>
+      <%= item_form.number_field :quantity, min: 0, class: "line_item_quantity form-control", size: 5 %>
     </td>
     <td class="cart-item-total" data-hook="cart_item_total">
       <%= line_item.display_amount.to_html unless line_item.quantity.nil? %>
