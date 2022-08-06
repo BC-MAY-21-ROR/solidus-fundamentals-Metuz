@@ -25,7 +25,7 @@
   <div class="field form-group" id=<%="#{address_id}country" %>>
     <%= form.label :country_id, t("spree.country") %><span class="required">*</span>
     <span id=<%="#{address_id}country-selection" %>>
-      <%= form.collection_select :country_id, available_countries, :id, :name, {}, {:class => 'required form-control'} %>
+      <%= form.collection_select :country_id,  available_countries, :id, :name, {}, {:class => 'required form-control'} %>
     </span>
   </div>
 
