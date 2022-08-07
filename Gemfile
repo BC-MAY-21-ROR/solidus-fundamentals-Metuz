@@ -32,10 +32,6 @@ gem 'solidus_auth_devise'
 # psych
 gem 'psych', '< 4'
 
-# Bootstrap
-gem 'bootstrap-sass', '~> 3.4.1'
-gem 'sassc-rails', '>= 2.1.0'
-
 # rubycritic
 gem "rubycritic", require: false
 
