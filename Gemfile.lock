@@ -80,7 +80,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.1)
     bcrypt (3.1.18)
     bindex (0.8.1)
-    bootsnap (1.12.0)
+    bootsnap (1.13.0)
       msgpack (~> 1.2)
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
@@ -134,7 +134,7 @@ GEM
       activerecord (>= 4.2, < 8)
     docile (1.4.0)
     equalizer (0.0.11)
-    erubi (1.10.0)
+    erubi (1.11.0)
     execjs (2.8.1)
     ffi (1.15.5)
     flay (2.13.0)
@@ -210,18 +210,14 @@ GEM
       rake
     mini_magick (4.11.0)
     mini_mime (1.1.2)
-    mini_portile2 (2.8.0)
     minitest (5.16.2)
     monetize (1.12.0)
       money (~> 6.12)
     money (6.16.0)
       i18n (>= 0.6.4, <= 2)
-    msgpack (1.5.3)
+    msgpack (1.5.4)
     nio4r (2.5.8)
-    nokogiri (1.13.7)
-      mini_portile2 (~> 2.8.0)
-      racc (~> 1.4)
-    nokogiri (1.13.7-x86_64-darwin)
+    nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     parser (3.1.2.0)
@@ -230,7 +226,7 @@ GEM
     paypal-checkout-sdk (1.0.4)
       paypalhttp (~> 1.0.1)
     paypalhttp (1.0.1)
-    pg (1.4.1)
+    pg (1.4.2)
     polyglot (0.3.5)
     psych (3.3.2)
     public_suffix (4.0.7)
@@ -458,7 +454,6 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
-  ruby
   x86_64-darwin-21
 
 DEPENDENCIES
