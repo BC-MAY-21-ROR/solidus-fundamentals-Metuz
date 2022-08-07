@@ -10,5 +10,9 @@
   "version": "0.1.0",
   "devDependencies": {
     "webpack-dev-server": "^4.9.3"
+  },
+  "scripts": {
+  "webpack:deploy": "webpack --config=webpack/webpack.config.js -p",
+  "heroku-postbuild": "npm run webpack:deploy"
   }
 }
